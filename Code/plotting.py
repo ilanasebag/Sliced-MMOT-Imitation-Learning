@@ -85,9 +85,3 @@ def animate(states_nc, legend=False):
     
     
     
-    
-exp = np.load ('/Users/ilanasebag/Desktop/TEST_WASS_PWIL/RL_results/exp_states_Pendulum-v0.npy',
-                  allow_pickle = True)
-
-states = preprocess_states(exp[0])
-animate(states)
