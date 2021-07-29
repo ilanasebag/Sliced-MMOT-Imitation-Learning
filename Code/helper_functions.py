@@ -18,12 +18,15 @@ def concatenate_and_sample(exp):
 
     exp1 = exp[0]
     exp2 = exp[1]
+    exp3 = exp[2]
+    exp4 = exp[3]
+    exp5 = exp[4]
     
     states = np.zeros(shape=(200,3))
     
     for j in range(200):
         for i in range(3):
-            states[j,i] = np.random.choice([exp1[j,i], exp2[j,i]], replace = True)
+            states[j,i] = np.random.choice([exp1[j,i], exp2[j,i], exp3[j,i], exp4[j,i], exp5[j,i] ], replace = True)
             
     return(states)
     
