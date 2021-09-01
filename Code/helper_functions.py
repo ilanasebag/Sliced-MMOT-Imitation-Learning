@@ -50,9 +50,6 @@ def concatenate_and_sample_cartpole(exp):
     return(states)
     
 
-
-
-
 def get_agent_reward(reward_sw):
     agent_reward = reward_sw[:,:1]
     return agent_reward
