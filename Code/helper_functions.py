@@ -45,7 +45,7 @@ def concatenate_and_sample_cartpole(exp):
     
     for j in range(200):
         for i in range(4):
-            states[j,i] = np.random.choice([exp1[j,i], exp2[j,i], exp3[j,i], exp4[j,i], exp5[j,i] ], replace = True)
+            states[j,i] = np.random.choice([exp1[j,i], exp2[j,i], exp3[j,i], exp4[j,i], exp5[j,i] ], replace = False)
             
     return(states)
     

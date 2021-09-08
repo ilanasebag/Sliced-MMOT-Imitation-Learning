@@ -49,7 +49,7 @@ def animate(states_nc, legend=False):
     (fig, ax) = plt.subplots(figsize=(8,8))
     fig.patch.set_facecolor((1,1,1))
 
-    gt_circ_nc = matplotlib.patches.Circle((0,0),radius=0.1,zorder=0,color="cornflowerblue")
+    gt_circ_nc = matplotlib.patches.Circle((0,0),radius=0.1,zorder=0,color="orange")
     
     ax.add_patch(gt_circ_nc)
     
@@ -63,7 +63,7 @@ def animate(states_nc, legend=False):
     ax.set_aspect('equal', adjustable='box')
     
     if legend:
-        handle_nc = matplotlib.lines.Line2D((0,),(0,), marker="o", color="w", markerfacecolor="cornflowerblue", label="Ground Truth", markersize=28)
+        handle_nc = matplotlib.lines.Line2D((0,),(0,), marker="o", color="w", markerfacecolor="orange", label="Ground Truth", markersize=28)
     
         ax.legend(handles = (handle_nc), framealpha=0.0,ncol=2,loc="center",bbox_to_anchor=(0.5,1.05),handlelength=0.5,fontsize=16)
 

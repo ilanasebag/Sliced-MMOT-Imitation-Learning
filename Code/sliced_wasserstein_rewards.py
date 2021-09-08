@@ -30,7 +30,6 @@ def rand_projections(embedding_dim, num_samples=10):
     projections = np.asarray(projections)
     return torch.from_numpy(projections).type(torch.FloatTensor)
    
-    
 def rewarder_1d(emp_measures, weights = None, device = 'cpu'):
         # emp_measures: list of measures, each being an array of dim n_support_points x 1
         num_measures = len(emp_measures)
